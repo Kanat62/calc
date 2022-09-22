@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="calculator">
+			<div class="calculator__display">
+				<div class="dev-name">Уметов Канат</div>
+				<div class="display__wrapper"><div class="display__calculation">0</div></div>	
+				<div class="display__wrapper border"><div class="display__equals"></div></div>
+				<div class="display__percent">
+					<div class="block-num">
+						<input type="text" class="general-num" inputmode="none">
+						<input type="text" class="part-num" inputmode="none">
+					</div>
+					<div class="block-percent">
+						<input type="text" class="general-percent" inputmode="none"> <img class="general-img" src="img/percent.webp" alt="">
+						<input type="text" class="part-percent" placeholder="0 - 100" inputmode="none"> <img class="pert-img" src="img/percent.webp" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="calculator__btns">
+				<div class="btn operator clear" data-type="clear">C</div>
+				<div class="btn operator percent-btn" data-type="delete"><img class="img-operator" src="img\backspace-outline.svg" data-type="delete" alt=""></div>
+				<div class="btn operator percent">%</div>
+				<div class="btn operator" data-type="/">/</div>
+
+				<div class="btn percent-btn" data-type="7">7</div>
+				<div class="btn percent-btn" data-type="8">8</div>
+				<div class="btn percent-btn" data-type="9">9</div>
+				<div class="btn operator" data-type="*"><img class="img-operator" src="img\close-outline.svg" data-type="*" alt=""></div>
+
+				<div class="btn percent-btn" data-type="4">4</div>
+				<div class="btn percent-btn" data-type="5">5</div>
+				<div class="btn percent-btn" data-type="6">6</div>
+				<div class="btn operator" data-type="-"><img class="img-operator" src="img\remove-outline.svg" data-type="-" alt=""></div>
+
+				<div class="btn percent-btn" data-type="1">1</div>
+				<div class="btn percent-btn" data-type="2">2</div>
+				<div class="btn percent-btn" data-type="3">3</div>
+				<div class="btn operator" data-type="+"><img class="img-operator" src="img\add-outline.svg" data-type="+" alt=""></div>
+
+				<div class="btn operator " data-type="#" id="hide-name">#</div>
+				<div class="btn percent-btn" data-type="0">0</div>
+				<div class="btn operator percent-btn" data-type=".">.</div>
+				<div class="btn operator equal" data-type="="><img class="img-operator" src="img\reorder-two-outline.svg" data-type="=" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
